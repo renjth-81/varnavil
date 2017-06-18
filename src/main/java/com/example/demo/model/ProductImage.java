@@ -21,9 +21,6 @@ public class ProductImage {
 	
 	private String imgPath;
 	
-	// 1 - small, 2 - medium, 3 - large
-	private Integer imageSize;
-	
 	public Integer getProductImageId() {
 		return productImageId;
 	}
@@ -41,11 +38,5 @@ public class ProductImage {
 	}
 	public void setImgPath(String imgPath) {
 		this.imgPath = imgPath;
-	}
-	public Integer getImageSize() {
-		return imageSize;
-	}
-	public void setImageSize(Integer imageSize) {
-		this.imageSize = imageSize;
 	}
 }

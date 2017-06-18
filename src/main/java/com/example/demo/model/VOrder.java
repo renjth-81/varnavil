@@ -22,8 +22,8 @@ public class VOrder {
 	String orderNumber;
 
 	@ManyToOne
-	@JoinColumn(name = "userId")
-	User user;
+	@JoinColumn(name = "customerId")
+	Customer customer;
 
 	Date date;
 
@@ -50,14 +50,6 @@ public class VOrder {
 		this.orderNumber = orderNumber;
 	}
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
-
 	public Date getDate() {
 		return date;
 	}
@@ -80,6 +72,14 @@ public class VOrder {
 
 	public void setOrderStatus(OrderStatus orderStatus) {
 		this.orderStatus = orderStatus;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 	
 }
